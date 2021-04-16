@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "FETCH_GAMES":
-      return state;
+      return { ...state, popular: action.payload.popular };
     default:
       return state;
   }
