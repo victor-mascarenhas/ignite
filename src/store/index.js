@@ -3,9 +3,11 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 
 import gamesReducer from "./reducers/gamesReducer";
+import detailReducer from "./reducers/detailReducer";
 
 const reducers = combineReducers({
   games: gamesReducer,
+  detail: detailReducer,
 });
 
 const middleware = [thunk];
