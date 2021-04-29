@@ -19,9 +19,7 @@ const Home = () => {
     dispatch(loadGames());
   }, [dispatch]);
 
-  const { popular, newGames, upcoming, isLoading } = useSelector(
-    (state) => state.games
-  );
+  const { popular, newGames, upcoming } = useSelector((state) => state.games);
 
   return (
     <GameList>
