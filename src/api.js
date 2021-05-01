@@ -40,3 +40,6 @@ export const gameDetailsURL = (game_id) =>
 //Game Screenshots
 export const gameScreenshotURL = (game_id) =>
   `${base_url}games/${game_id}/screenshots?key=${api_key}`;
+//Searched Game
+export const searchGameURL = (game_name) =>
+  `${base_url}games?key=${api_key}&search=${game_name}&page_size=9`;
